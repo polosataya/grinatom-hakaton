@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>info</title>
+</head>
+<body>
+
+{% if result %}
+<h2>Вероятность вашего увольнения: {{result}} %</h2>
+<a href="/">Вернуться</a>
+{% else %}
+    <h2>Хотите оценить, насколько сильно ваше желание уволиться?</h2>
+    <form action="" method="post">
+        <p>
+	        <label for="position">Должность</label>
+            <select name="position">
+            <option>Выберите из списка</option>
+            <option>Бухгалтер</option>
+            <option>Инженер</option>
+            <option>Офисный сотрудник</option>
+            <option>Руководитель</option>
+            <option>ИТ специалист</option>
+            <option>Рабочий</option>
+            <option>Продавец</option>
+            <option>Консультант</option>
+            <option>Оператор call-центра</option>
+            </select>
+	    </p>
+
+	    <p>
+	        <label for="years">Сколько лет вы проработали</label>
+            <select name="years">
+            <option>Выберите из списка</option>
+            <option><1</option>
+            <option>1-2</option>
+            <option>3-5</option>
+            <option>6-10</option>
+            <option>>10</option>
+            </select>
+	    <p>
+	    <p><b>Оцените:</b></p>
+	        <label for="salary">Уровень оплаты труда</label>
+            <select name="salary">
+            <option>Оценить</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            </select>
+	    </p>
+	    <p>
+	        <label for="superiors">Начальство</label>
+            <select name="superiors">
+            <option>Оценить</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            </select>
+	    </p>
+	    <p>
+	        <label for="workplace">Рабочее место</label>
+            <select name="workplace">
+            <option>Оценить</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            </select>
+	    </p>
+	    <p>
+	        <label for="colleagues">Коллектив</label>
+            <select name="colleagues">
+            <option>Оценить</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            </select>
+	    </p>
+	    <p>
+	        <label for="career">Карьерный рост</label>
+            <select name="career">
+            <option>Оценить</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            </select>
+	    </p>
+	    <p><b>Опишите плюсы работы:</b></p>
+        <p>
+            <textarea name="plus" rows="8" cols="50" maxlength="1500"></textarea>
+        </p>
+	    <p><b>Что нужно улучшить:</b></p>
+        <p>
+            <textarea name="minus" rows="8" cols="50" maxlength="1500"></textarea>
+        </p>
+	    <p>
+	        <input type="submit" value="Узнать">
+	    </p>
+    </form>
+{% endif %}
+
+</body>
+</html>
+

@@ -3,7 +3,7 @@
 
 Трек "Машинное обучение" одна из трех команд финалистов (без места)
 
-Цель - предсказать веротяность увольнения сотрудника.
+Цель - предсказать вероятность увольнения сотрудника.
 
 Анализ, обучение модели и постороение графа [EDA_fit_graph.ipynb](https://github.com/polosataya/grinatom-hakaton/blob/master/EDA_fit_graph.ipynb)  
 Обученные модели tfidf.pkl и lgb_clf.txt в [pythonanywhere](https://github.com/polosataya/grinatom-hakaton/tree/master/pythonanywhere)
